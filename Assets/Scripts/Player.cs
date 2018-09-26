@@ -22,18 +22,13 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = transform.position.z;
-            if (move == false)
-                move = true;
-            Instantiate(point, target, Quaternion.identity);
+            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);   
         }
-        if (move == true)
-            transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("collider"))
+        if (collision.CompareTag("Collider"))
         {
             SceneManager.LoadScene("Practice");
         }
