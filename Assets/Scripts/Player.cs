@@ -7,9 +7,7 @@ public class Player : MonoBehaviour
 {
 
 
-    public float speed;
-    private bool move = false;
-    public GameObject point;
+   
     private Vector3 target;
     public BoxCollider2D col;
 
@@ -22,18 +20,22 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = transform.position.z;
-            if (move == false)
-                move = true;
-            Instantiate(point, target, Quaternion.identity);
+            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);   
         }
+<<<<<<< HEAD
         if (move == true)
             transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+=======
+        transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5);
+>>>>>>> a6fe424c98de9c333ceb53e95e799fabf1e498f4
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
+<<<<<<< HEAD
         if (col.CompareTag("Collider"))
+=======
+        if (collision.CompareTag("Collider"))
+>>>>>>> a6fe424c98de9c333ceb53e95e799fabf1e498f4
         {
             SceneManager.LoadScene("Combat");
         }
