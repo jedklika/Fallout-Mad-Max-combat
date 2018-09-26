@@ -29,13 +29,13 @@ public class Player : MonoBehaviour
             Instantiate(point, target, Quaternion.identity);
         }
         if (move == true)
-            transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("collider"))
+        if (col.CompareTag("Collider"))
         {
-            SceneManager.LoadScene("Practice");
+            SceneManager.LoadScene("Combat");
         }
     }
 }
