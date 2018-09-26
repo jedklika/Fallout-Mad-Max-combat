@@ -7,9 +7,7 @@ public class Player : MonoBehaviour
 {
 
 
-    public float speed;
-    private bool move = false;
-    public GameObject point;
+   
     private Vector3 target;
     public BoxCollider2D col;
 
