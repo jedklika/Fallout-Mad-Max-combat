@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    private IEnumerator coroutine;
+
+    void Start () {
 		
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}
