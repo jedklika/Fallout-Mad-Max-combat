@@ -410,6 +410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadLevel: Combat
   col: {fileID: 1912683518}
+  health: 100
 --- !u!61 &1912683518
 BoxCollider2D:
   m_ObjectHideFlags: 0

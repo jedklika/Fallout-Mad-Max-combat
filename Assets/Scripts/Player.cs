@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
         if (health <= 0)
         {
-            GameObject.Destroy(this.gameObject);
+            SceneManager.LoadScene("Combat");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
