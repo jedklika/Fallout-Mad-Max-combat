@@ -10,9 +10,15 @@ public class EnemyAI : MonoBehaviour {
 
     private Transform target;
 
+    public int health;
+
 	// Use this for initialization
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
     }
 	
 	// Update is called once per frame
@@ -20,6 +26,10 @@ public class EnemyAI : MonoBehaviour {
 		if(Vector2.Distance(transform.position, target.position)> stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
+        if (health <= 0)
+        {
+            GameObject.Destroy(this.gameObject);
         }
 	}
 }

@@ -159,7 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Projectile: {fileID: 1777260482176474, guid: d4ae12d1abd73af48a8870fb0f622952, type: 2}
   ShotPoint: {fileID: 801541186}
-  StartTimeBtwShot: 0.25
+  StartTimeBtwShot: 0.5
 --- !u!65 &141232862
 BoxCollider:
   m_ObjectHideFlags: 0
