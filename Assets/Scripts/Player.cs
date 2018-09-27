@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
 
-
-   
     private Vector3 target;
     public BoxCollider2D col;
 
@@ -24,10 +22,11 @@ public class Player : MonoBehaviour
         }
         transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5);
     }
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Collider"))
+        if (collision.tag == "Collider")
         {
+            Debug.Log("Its hit bitch");
             SceneManager.LoadScene("Practice");
         }
     }
