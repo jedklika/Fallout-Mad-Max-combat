@@ -27,11 +27,12 @@ public class Shooter : MonoBehaviour
             if (Input.GetMouseButtonDown(1))
             {
                 Instantiate(Projectile, ShotPoint.position, transform.rotation);
+                TimeBtwShot = StartTimeBtwShot;
             }
         }
         else
         {
-            TimeBtwShot -= StartTimeBtwShot;
+            TimeBtwShot -= Time.deltaTime;
         }
     }
 }
