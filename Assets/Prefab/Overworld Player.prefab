@@ -99,7 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 214c1e0315c67f94f91b4b155b9979bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadLevel: Combat
   col: {fileID: 61944778584683054}
+  health: 100
 --- !u!212 &212685017047798270
 SpriteRenderer:
   m_ObjectHideFlags: 1

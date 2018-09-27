@@ -9,11 +9,16 @@ public class Player : MonoBehaviour
 
     private Vector3 target;
     public BoxCollider2D col;
+    public int health;
 
     void Start()
     {
         col = GetComponent<BoxCollider2D>();
 
+    }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
     }
     void Update()
     {
@@ -22,6 +27,11 @@ public class Player : MonoBehaviour
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);   
         }
         transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5);
+
+        if (health <= 0)
+        {
+            GameObject.Destroy(this.gameObject);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

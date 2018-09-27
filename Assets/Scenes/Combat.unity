@@ -898,6 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadLevel: Practice
   col: {fileID: 1865516434}
+  health: 10
 --- !u!4 &1953121799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4154655346586402, guid: b75148691875527438122abff48a814f,
