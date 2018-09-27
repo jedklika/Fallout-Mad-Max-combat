@@ -24,11 +24,11 @@ public class Player : MonoBehaviour
         }
         transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5);
     }
-   /* void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Collider"))
         {
             SceneManager.LoadScene("Practice");
         }
-    }*/
+    }
 }
