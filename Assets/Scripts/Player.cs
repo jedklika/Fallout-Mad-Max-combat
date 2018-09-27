@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] string loadLevel;
 
     private Vector3 target;
     public BoxCollider2D col;
@@ -27,7 +28,7 @@ public class Player : MonoBehaviour
         if (collision.tag == "Collider")
         {
             Debug.Log("Its hit bitch");
-            SceneManager.LoadScene("Practice");
+            SceneManager.LoadScene(loadLevel);
         }
     }
 }

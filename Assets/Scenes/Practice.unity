@@ -408,6 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 214c1e0315c67f94f91b4b155b9979bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadLevel: Combat
   col: {fileID: 1912683518}
 --- !u!61 &1912683518
 BoxCollider2D:
