@@ -5,6 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
     public float speed;
     public float lifeTime;
+    public Vector3 target;
 	// Use this for initialization
 	void Start () {
         Invoke("DestroyProjectile", lifeTime);
@@ -12,7 +13,8 @@ public class Projectile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(transform.up * speed * Time.deltaTime);
+        target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position= Vector2.MoveTowards(transform.position,target, speed * Time.deltaTime*5);
 	}
     void DestroyProjectile()
     {
