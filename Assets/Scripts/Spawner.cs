@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour {
             spawnCountdown = 10.0f;
             while(spawnCountdown > 0)
             {
-                Debug.Log("Spawn Time" + spawnCountdown);
+                Debug.Log("Spawn Time: " + spawnCountdown);
                 yield return new WaitForSeconds(1.0f);
                 spawnCountdown--;
             }
@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour {
             spawnCountdown = 10.0f;
             while(spawnCountdown > 0)
             {
-                Debug.Log("Remaining Time" + spawnCountdown);
+                Debug.Log("Remaining Time: " + spawnCountdown);
                 yield return new WaitForSeconds(1.0f);
                 spawnCountdown--;
             }
