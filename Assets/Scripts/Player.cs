@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] string loadLevel;
+    //[SerializeField] string loadLevel;
 
-    private Vector3 target;
     public BoxCollider2D col;
     public int health;
+    float moveHorizontal;
+    float moveVertical;
+    public int speed;
 
     void Start()
     {
@@ -22,12 +24,17 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
+        transform.Translate(new Vector2(moveHorizontal * Time.deltaTime * speed, moveVertical * Time.deltaTime * speed));
+        if (Input.GetAxis("Horizontal") < 0 )
         {
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);   
+             
         }
-        transform.position = Vector2.MoveTowards(transform.position, target, Time.deltaTime * 5);
-
+        if(Input.GetAxis("Horizontal") > 0)
+        {
+           
+        }
         if (health <= 0)
         {
             SceneManager.LoadScene("Combat");
@@ -38,7 +45,11 @@ public class Player : MonoBehaviour
         if (collision.tag == "Collider")
         {
             Debug.Log("Its hit bitch");
-            SceneManager.LoadScene(loadLevel);
+            SceneManager.LoadScene("Practice");
+        }
+        if(collision.tag == "Foe")
+        {
+            SceneManager.LoadScene("Combat");
         }
     }
 }
