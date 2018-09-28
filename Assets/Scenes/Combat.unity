@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 141232863}
   - component: {fileID: 141232862}
   - component: {fileID: 141232861}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 551696243}
   - component: {fileID: 551696245}
   - component: {fileID: 551696242}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: top boundary (1)
   m_TagString: Collider
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 801541186}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: ShotPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,19 +692,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1939305038102246, guid: b75148691875527438122abff48a814f, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1740124670879084, guid: b75148691875527438122abff48a814f, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1946741967807406, guid: b75148691875527438122abff48a814f, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1004854750365658, guid: b75148691875527438122abff48a814f, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65165751545118830, guid: b75148691875527438122abff48a814f, type: 2}
@@ -772,7 +772,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1921550939983660, guid: a29487ada44956c4e801609204917231, type: 2}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 65970630667886246, guid: a29487ada44956c4e801609204917231, type: 2}
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 1865516435}
   - component: {fileID: 1865516439}
   - component: {fileID: 1865516434}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}

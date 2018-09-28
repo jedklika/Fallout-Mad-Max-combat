@@ -28,7 +28,7 @@ public class ProjectileFoe : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            GetComponent<Player>().TakeDamage(damage);
+            Player.GetComponent<Player>().TakeDamage(damage);
             DestroyProjectile();       
         }
     }
