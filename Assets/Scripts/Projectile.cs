@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour {
             if (hitinfo.collider.CompareTag("Foe"))
             {
                 Debug.Log("Foe Must Take Damage");
-                hitinfo.collider.GetComponent<EnemyAI>().TakeDamage(damage);
+                hitinfo.collider.GetComponent<EnemyAICombat>().TakeDamage(damage);
             }
             DestroyProjectile();
         }
