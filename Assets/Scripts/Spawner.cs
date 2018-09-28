@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
     public GameObject Foe;
-    public bool StopSpawning = false;
-    public float SpawnTime;
-    public float SpawnDelay;
+    
 
     void Start()
     {
-        InvokeRepeating("SpawnObject", SpawnTime, SpawnDelay);
+        StartCoroutine(SpawnEnemy());
+        
     }
 
-    public void SpawnObject()
+    
+    IEnumerator SpawnEnemy()
     {
-        Instantiate(Foe, transform.position, Quaternion.identity);
-        StopSpawning = true;
-        if (StopSpawning)
+        float spawnCountdown;
+        while (true)
         {
-            CancelInvoke("SpawnObject");
+            spawnCountdown = 10.0f;
+            while(spawnCountdown > 0)
+            {
+                Debug.Log("Spawn Time" + spawnCountdown);
+                yield return new WaitForSeconds(1.0f);
+                spawnCountdown--;
+            }
+            GameObject enemy = Instantiate(Foe, transform.position, Quaternion.identity);
+            spawnCountdown = 10.0f;
+            while(spawnCountdown > 0)
+            {
+                Debug.Log("Remaining Time" + spawnCountdown);
+                yield return new WaitForSeconds(1.0f);
+                spawnCountdown--;
+            }
+            Destroy(enemy);
         }
+        
     }
 }
