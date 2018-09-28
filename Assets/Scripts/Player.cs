@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public int health;
     float moveHorizontal;
     float moveVertical;
-    public int speed;
+    public int speed = 5;
 
     void Start()
     {
@@ -35,10 +35,7 @@ public class Player : MonoBehaviour
         {
            
         }
-        if (health <= 0)
-        {
-            SceneManager.LoadScene("Combat");
-        }
+       
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
