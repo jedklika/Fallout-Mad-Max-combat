@@ -44,10 +44,6 @@ public class Player : MonoBehaviour
             Debug.Log("Its hit bitch");
             SceneManager.LoadScene("Practice");
         }
-        if (collision.tag == "Foe")
-        {
-            SceneManager.LoadScene("Combat");
-        }
     }
 
 }
