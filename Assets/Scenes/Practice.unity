@@ -410,8 +410,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   Foe: {fileID: 1948479827071016, guid: a6643d6db81e0eb41bda9a5cf6f5f9c9, type: 2}
 =======
+=======
+>>>>>>> parent of 1f480df... Combat in overworld
 =======
 >>>>>>> parent of 1f480df... Combat in overworld
   Foe: {fileID: 1445082716769892, guid: ab6b810d860c40b47832f359f0a08dc3, type: 2}
@@ -419,6 +422,9 @@ MonoBehaviour:
   SpawnTime: 1
   SpawnDelay: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 1f480df... Combat in overworld
+=======
 >>>>>>> parent of 1f480df... Combat in overworld
 =======
 >>>>>>> parent of 1f480df... Combat in overworld
