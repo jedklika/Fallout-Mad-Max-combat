@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 m_EditorVersion: 2018.2.12f1
 =======
 m_EditorVersion: 2018.2.9f1
 >>>>>>> 321bd44a965355b52c70b4d306eea79afd21cac5
+=======
+m_EditorVersion: 2018.2.8f1
+>>>>>>> parent of a96c5ec... Melee Combat
