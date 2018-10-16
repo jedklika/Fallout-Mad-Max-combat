@@ -965,7 +965,7 @@ MonoBehaviour:
   whatIsEnemies:
     serializedVersion: 2
     m_Bits: 256
-  attackRange: 3
+  attackRange: 5
   damage: 20
 --- !u!4 &1953121799 stripped
 Transform:
