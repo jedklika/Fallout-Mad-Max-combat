@@ -919,27 +919,6 @@ MonoBehaviour:
   col: {fileID: 1865516434}
   health: 40
   speed: 5
-<<<<<<< HEAD
-=======
---- !u!114 &1865516440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1865516433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 406a7e453266830418626d9ab88774c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startTimeBtwAttack: 0.3
-  attackPos: {fileID: 277469437}
-  whatIsEnemies:
-    serializedVersion: 2
-    m_Bits: 256
-  attackRange: 5
-  damage: 20
->>>>>>> parent of 1f480df... Combat in overworld
 --- !u!4 &1953121799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4154655346586402, guid: b75148691875527438122abff48a814f,

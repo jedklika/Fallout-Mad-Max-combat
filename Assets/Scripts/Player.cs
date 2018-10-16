@@ -44,11 +44,7 @@ public class Player : MonoBehaviour
             Debug.Log("Its hit bitch");
             SceneManager.LoadScene("Practice");
         }
-<<<<<<< HEAD
         if(collision.tag == "Foe")
-=======
-        if (collision.tag == "Foe")
->>>>>>> parent of 1f480df... Combat in overworld
         {
             SceneManager.LoadScene("Combat");
         }
